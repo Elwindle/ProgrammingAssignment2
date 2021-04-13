@@ -39,7 +39,7 @@ cacheSolve <- function(x, ...) {
     # If not, get the matrix from the object
     data <- x$get()
     # Find the inverse using solve()
-    inverse <- solve(data)
+    inverse <- solve(data, ...)
     # Set the new inverse value
     x$setinverse(inverse)
     #return the inverse
